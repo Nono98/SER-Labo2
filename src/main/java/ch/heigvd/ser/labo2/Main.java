@@ -38,8 +38,7 @@ class Main {
     private static Document readDocument(File file) throws JDOMException, IOException {
 
         // TODO : A compléter... (ne doit pas faire plus d'une ligne). Vous êtes autorisés à créer des méthodes utilitaires, mais pas des classes
-        SAXBuilder saxBuilder = new SAXBuilder();
-        return (Document) saxBuilder.build(file);
+       return (Document) new SAXBuilder().build(file);
     }
 
     /**
@@ -195,7 +194,8 @@ class Main {
                                                 file.print(getRoque(roque.getAttributeValue("type")).notationPGN());
                                         }
                                     }
-                                    if (cnt_coup % 2 != 0) file.print("\n");
+                                    if (cnt_coup % 2 != 0) 
+                                        file.print("\n");
                                 }
                             }
                             file.flush();
