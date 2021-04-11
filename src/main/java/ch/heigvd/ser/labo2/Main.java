@@ -38,7 +38,7 @@ class Main {
     private static Document readDocument(File file) throws JDOMException, IOException {
 
         // TODO : A compléter... (ne doit pas faire plus d'une ligne). Vous êtes autorisés à créer des méthodes utilitaires, mais pas des classes
-       return (Document) new SAXBuilder().build(file);
+       return new SAXBuilder().build(file);
     }
 
     /**
