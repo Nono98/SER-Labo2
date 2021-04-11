@@ -48,12 +48,6 @@
                             <deplacement piece="Pion" case_arrivee="e5"/>
                         </coup>
                         <coup>
-                            <deplacement piece="Pion"  case_depart="e4" case_arrivee="d5" elimination="Pion"/>
-                        </coup>
-                        <coup>
-                            <deplacement piece="Pion" case_depart="e6" case_arrivee="d5" elimination="Pion"/>
-                        </coup>
-                        <coup>
                             <deplacement piece="Fou" case_arrivee="c4"/>
                         </coup>
                         <coup>
